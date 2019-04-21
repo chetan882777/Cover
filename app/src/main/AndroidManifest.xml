@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.chetan.projects.cover">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/colored_back_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/colored_back_logo"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
+
+        <activity
+            android:name=".WallpaperActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/wallpaperTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chetan.projects.cover.MainActivity" />
+        </activity>
+
+
+
+        <activity
+            android:name=".WallpaperDetailActivity"
+            android:parentActivityName=".WallpaperActivity"
+            android:theme="@style/wallpaperTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chetan.projects.cover.WallpaperActivity" />
+        </activity>
+
+
+        <activity android:name=".EntrieActivity" />
+
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+
+        <activity
+            android:name=".RecentWallpapersActivity"
+            android:label="@string/title_activity_recent_wallpapers"
+            android:theme="@style/wallpaperTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chetan.projects.cover.MainActivity" />
+        </activity>
+
+
+
+        <activity
+            android:name=".DownloadsActivity"
+            android:label="Downloads"
+            android:theme="@style/wallpaperTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chetan.projects.cover.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".ZoomActivity"
+            android:label="Downloads"
+            android:theme="@style/zoomTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chetan.projects.cover.MainActivity" />
+        </activity>
+
+
+        <service
+            android:name=".Service.CoverWallpaperSyncService"
+            android:exported="false" />
+        <service
+            android:name=".Service.NextWallpaperFirebaseJobService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

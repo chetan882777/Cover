@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO(3) add ripple effect to list -->
+    <ImageView
+        android:id="@+id/imageView_list_item_wallpaper"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@drawable/loading_animation"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

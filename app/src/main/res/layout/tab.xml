@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_wallpaper"
+    tools:context=".WallpaperActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- List view to display search hinting -->
+        <ListView
+            android:id="@+id/search_options_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <!-- view for display wallpapers -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView_wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- progress bar shown while json fetching is going on -->
+        <ProgressBar
+            android:id="@+id/progressBar_wallpaper"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

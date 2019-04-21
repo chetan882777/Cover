@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme atr -->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#c7c7c7</color>
+
+    <!-- Light theme atr -->
+    <color name="colorPrimary2">#31579f</color>
+    <color name="colorPrimaryDark2">#452556</color>
+
+    <color name="colorPrimaryLight">#EDE7F6</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorSecondary">#FFC107</color>
+    <color name="actionBarText">#353535</color>
+    <color name="backgroundTextListItemWallpaper">#64000000</color>
+
+    <color name="searchViewBackground">#EDE7F6</color>
+
+    <color name="secondaryAccent">#ff454545</color>
+
+    <!-- Loader animation colors-->
+    <color name="animationLeft">#ece6f5</color>
+    <color name="animationRight">#c9c9c9</color>
+    <color name="actionStartColor">#ff311a3d</color>
+    <color name="actionEndColor">#ff2b549e</color>
+</resources>

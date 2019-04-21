@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Set wallpaper"
+        android:id="@+id/action_set_wallpaper_zoom"
+        android:orderInCategory="1"
+        app:showAsAction="never"/>
+    <item
+        android:title="Remove"
+        android:id="@+id/action_remove_zoom"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+</menu>
